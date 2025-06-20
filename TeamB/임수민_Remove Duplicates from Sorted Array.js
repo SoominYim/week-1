@@ -88,3 +88,9 @@ var removeDuplicates = nums => (
 
 //   return uniqeLength+1
 // };
+
+// Example usage:
+const nums = [1, 1, 2, 2, 3];
+const newLength = removeDuplicates(nums);
+console.log(newLength); // Output: 3
+console.log(nums.slice(0, newLength)); // Output: [1, 2, 3]
