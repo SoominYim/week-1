@@ -5,7 +5,7 @@
 
 /**
  * comma operator를 사용
- * nums.splice안에서 nums value를 전부 제거 => filter링 된 unique한 값을 nums에 넣어줌
+ * nums.splice안에서 nums value를 전부 제거 => filtering 된 unique한 값을 nums에 넣어줌
  * comma operator 마지막 값은 반환값이 되므로 최종적으로 변경된 nums.length를 반환해줌
  *
  * 시간 복잡도
