@@ -1,3 +1,4 @@
+/**
 ```markdown
 122. Best Time to Buy and Sell Stock II
 
@@ -27,16 +28,21 @@ Find and return the maximum profit you can achieve.
 |Input: prices = [7,6,4,3,1]
 |Output: 0
 |Explanation: There is no way to make a positive profit, so we never buy the stock to achieve the maximum profit of 0.
- 
+
 
 **Constraints:**
-
 - 1 <= prices.length <= 3 * 104
 - 0 <= prices[i] <= 104
 ```;
+ */
 
 /**
  * @param {number[]} prices
  * @return {number}
  */
-var maxProfit = function (prices) {};
+const maxProfit = prices =>
+  prices.reduce((acc, cur, idx) => acc + (cur > prices[idx - 1] ? cur - prices[idx - 1] : 0), 0);
+
+console.log(maxProfit([7, 1, 5, 3, 6, 4]));
+console.log(maxProfit([1, 2, 3, 4, 5]));
+console.log(maxProfit([7, 6, 4, 3, 1]));
